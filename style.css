@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
 :root {
     --main-btn: hsl(322, 100%, 66%);
+    --primary-color: hsl(192, 100%, 9%);
 }
 
 * {
@@ -8,23 +11,54 @@
     box-sizing: border-box;
 }
 
+html {
+    background: url(/images/bg-hero-mobile.svg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    /* background-color: hsl(193, 100%, 96%); */
+    /* overflow: hidden; */
+  }
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
-    background: url(/images/bg-hero-mobile.svg) cover no-repeat;
-    /* width: 90%; */
+    padding: 20px 0;
+    padding-bottom: 0;
+    background-color: hsl(193, 100%, 96%);
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin-bottom: 80px;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav button {
+    cursor: pointer;
+    border: none;
+    border-radius: 21px;
+    padding: 8px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+nav button:focus {
+    outline: none;
 }
 
 main {
@@ -32,8 +66,166 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 85%;
+    padding-bottom: 30px;
 }
 
 main img {
     width: 100%;
+}
+
+main h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* padding: 0 5px; */
+}
+
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main button {
+    cursor: pointer;
+    /* width: ; */
+    padding: 10px 55px;
+    margin-bottom: 50px;
+    border: none;
+    /* height: 40px; */
+    border-radius: 20px;
+    background-color: var(--main-btn);
+    color: #fff;
+    font-size: 18px;
+}
+
+main button:hover {
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.features {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.features img {
+    width: 85%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.features h2 {
+    color: hsl(192, 100%, 9%);
+    padding-bottom: 20px;
+}
+
+.features p {
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-color: hsl(192, 100%, 9%);
+    padding: 0px 20px 40px 20px;
+    margin-top: 180px;
+}
+
+.footer-container img {
+    margin-bottom: -6px;
+}
+
+.footer-container p {
+    line-height: 25px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+    width: 90%;
+    padding-bottom: 20px;
+    
+}
+
+.logo {
+    color: white;
+    width: 200px;
+    padding: 75px 0 30px 0;
+    text-align: left;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social img {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+}
+
+.started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    padding: 0 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    margin-top: -90px;
+}
+
+.started h3 {
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
+
+footer button {
+    cursor: pointer;
+    padding: 10px 55px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-btn);
+    color: #fff;
+    font-size: 18px;
+}
+
+.about h4 {
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    font-size: 12px;
 }
